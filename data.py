@@ -23,6 +23,6 @@ class Data:
 			for d in self.parse(filename): 
 				df[i] = d 
 				i += 1
-				# if(i == 1000):
-				# 	break
+				if(i == 1000):
+					break
 		return pd.DataFrame.from_dict(df, orient='index') 
